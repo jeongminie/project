@@ -1,0 +1,174 @@
+body {
+	font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+header {
+	border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.container {
+	width : 700px;
+	height: 100vh;
+	padding : 10px;
+	background-color: white;
+}
+
+.menu ul {
+	list-style : none;
+	/* overflow : auto; */
+	padding-left : 0px;
+	padding-right : 0px;
+}
+
+.menu ul li {
+	/* font-size: 20px; */
+	float: left;
+}
+
+/* .nav-title:after {
+	content: "";
+    display: block;
+    width: 60px;
+	border-bottom: 1px solid red;
+	width : 20px;
+} */
+
+.nav-fill .nav-item .nav-link, .nav-justified .nav-item .nav-link {
+	width : fit-content;
+}
+
+.nav-title-item {
+	text-decoration-line: none;	
+	color : white !important;
+	font-size : large;
+}
+
+.nav-title-item:hover {
+	color : white;
+}
+
+.nav-title-item:visited {
+	color : white;
+}
+
+.dropdown {
+	display : flex;
+	justify-content : center;
+}
+
+.dropdown-menu {
+	font-size : 15px;
+	height : 30px;
+	padding: 0px;
+	border-bottom : 0px !important;
+	border-radius : 0px;
+	background-image: url('/resources/static/image/micro_carbon.png');
+	display: none;
+	color : white;
+}
+
+.nav-sub {
+	display: flex;
+    width: 100%;
+    justify-content: center;
+    color : white;
+}
+
+.nav-link {
+	color : white;
+}
+
+.dropdown-toggle::after {
+	border : 0px;
+}
+
+.step-box ul {
+	list-style : none;
+	overflow : auto;
+	padding-left : 0px;
+	padding-right : 0px;
+	border-bottom : 1px solid #EBEBEB;
+}
+			
+.step-box ul li {
+	float : left;
+	padding-bottom: 20px;
+}
+
+.step-box {
+	margin-top : 20px;
+	font-size: 15px;
+}
+
+.step.on {
+	padding-bottom: 20px;
+	border-bottom:2px solid #CA0181;
+	color: #CA0181
+}
+
+.input-box {
+	font-size: 15px;
+}
+
+.text-input {
+	border : 1px solid #DADADA;
+}
+
+.form-control {
+	width : 350px;
+	
+}
+
+.home-btn {
+	border : 1px solid #DADADA;
+	width : 200px;
+	color : white;
+	background-color : #CA0181;
+	border : 0px;
+}
+
+.home-btn:hover {
+	color : white;
+	background-color : #CA0181;
+	border : 0px;
+}
+
+.login-btn {
+	border : 1px solid #DADADA;
+	width : 200px;
+	color : white;
+	background-color : #CA0181;
+	border : 0px;
+}
+  		
+.login-btn:hover {
+	color : white;
+	background-color : #CA0181;
+	border : 0px;
+}
+
+/* modal */
+.modal {
+	border : 0px;
+	
+}
+
+.modal-content {
+	border : 0px;
+	border-radius: 0px;
+	width : 80%
+}
+
+.modal-header {
+	height : 25px;
+	background-color: #CA0181;
+	border-radius: 0px;
+	color : white;
+	align-items : center;
+	margin-bottom: 10px;
+}
+
+/* .modal-title {
+	
+	
+} */
