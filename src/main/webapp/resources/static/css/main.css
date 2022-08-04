@@ -1,0 +1,272 @@
+body {
+	font-family: 'IBM Plex Sans KR', sans-serif;
+	background-image: url('/resources/static/image/micro_carbon.png');
+	color : white;
+}
+
+header {
+	background-color : rgba(0,0,0,.3) !important;
+	border-bottom: 1px solid rgba(255,255,255,.2);
+	padding-top: 10px;
+}
+
+.front-area {
+	margin: auto;
+	width : 60%;
+}
+
+.logo {
+	width : 170px;
+	height : 90px;
+	position: absolute;
+	top : 0%;
+	right : 46%;
+}
+
+.user {
+	position: absolute;
+	top : 6.5%;
+	right : 20%;
+}
+
+a {
+	text-decoration-line: none;	
+	color : white !important;
+}
+
+a:hover {
+	color : white;
+}
+
+ul {
+	list-style : none;
+	/* overflow : auto; */
+	padding-left : 0px;
+	padding-right : 0px;
+}
+
+.menu ul {
+	list-style : none;
+	/* overflow : auto; */
+	padding-left : 0px;
+	padding-right : 0px;
+}
+
+.menu ul li {
+	/* font-size: 20px; */
+	float: left;
+}
+
+/* .nav-title:after {
+	content: "";
+    display: block;
+    width: 60px;
+	border-bottom: 1px solid red;
+	width : 20px;
+} */
+
+.nav-fill .nav-item .nav-link, .nav-justified .nav-item .nav-link {
+	width : fit-content;
+}
+
+.nav-title-item {
+	text-decoration-line: none;	
+	color : white !important;
+	font-size : large;
+}
+
+.nav-title-item:hover {
+	color : white;
+}
+
+.nav-title-item:visited {
+	color : white;
+}
+
+.dropdown {
+	display : flex;
+	justify-content : center;
+}
+
+.dropdown-menu {
+	font-size : 15px;
+	height : 30px;
+	padding: 0px;
+	border-bottom : 0px !important;
+	border-radius : 0px;
+	background-color:transparent;
+	display: none;
+	color : white;
+}
+
+.nav-sub {
+	display: flex;
+    width: 100%;
+    justify-content: center;
+    color : white;
+}
+
+.nav-link {
+	color : white;
+}
+
+.dropdown-toggle::after {
+	border : 0px;
+}
+
+.cont-area {
+	margin: auto;
+	margin-top : 50px;
+	margin-bottom : 100px;
+	width : 60%;
+	text-align: center;
+}
+
+.rank-list {
+	display: flex;
+	justify-content: space-around;
+}
+
+/* .rank-box {
+	width : 250px;
+	height : 400px;
+	position: relative;
+} */
+
+.rank-item {
+	width : 250px;
+	height : 400px;
+	position: relative;
+}
+
+.poster {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius : 5px;
+}
+
+.wrap {
+	display : none;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	background-color : black;
+	border-radius : 5px;
+	position :absolute;
+	top : 0%;
+}
+
+.summary {
+	display: flex;
+	margin: 15px;
+	border-bottom: 1px solid #EBEBEB;
+}
+
+.booking-btn {
+	background-color: #037B94;
+	color : white;
+	border : 0px;
+}
+
+.booking-btn:hover {
+	background-color: #037B94;
+	color : white;
+	border : 0px;
+}
+
+.search-area {
+	margin-top: 100px;
+	
+	
+}
+		
+.search-link {
+	overflow:hidden; 
+	display:block; 
+	height:75px;
+	padding:23px 0 0 0; 
+	background-color:rgba(0,0,0,0.2);
+}
+
+.search-link .cell {
+	position:relative; 
+	float:left; 
+	width:25%; 
+	text-align:center; 
+	border-left:1px solid #423e3e;
+}
+
+.search-link .cell:first-child {
+	border-left:0;
+}
+
+.search-link .search {
+	position:relative; 
+	display:inline-block; 
+	width:200px; 
+	height:30px; 
+	padding:0 30px 0 0; 
+	border-bottom:1px solid #423e3e;
+}
+
+.search-link .search .input-text {
+	display:block; 
+	width:100%; 
+	height:100%; 
+	border:0; 
+	background-color:transparent; 
+	color:#fff;
+}
+
+.search-link .search .input-text::placeholder {
+	color:#aaa; 
+	opacity: 1;
+}
+
+.search-link .search .input-text:-ms-input-placeholder {
+	color:#aaa;
+}
+
+.search-link .search .input-text::-ms-input-placeholder {
+	color:#aaa;
+}
+
+.search-link .search .btn {
+	display:block; 
+	position:absolute; 
+	right:0; 
+	top:0; 
+	width:30px; 
+	height:100%; 
+	font-size:0; 
+	line-height:0; 
+	margin:0; 
+	padding:0; 
+	border:0; 
+	background-color:transparent;
+}
+
+.search-link a {
+	display:inline-block; 
+	margin:0; 
+	padding:0; 
+	line-height:30px; 
+	color:#fff;
+}
+
+.search-link a .iconset {
+	margin-top:-2px; 
+	margin-right:5px;
+}
+
+.login, .signup {
+	font-size: 13px;
+}
+
+.footer-area {
+	
+	height: 300px;
+	background-color: #F8F8FA;
+	
+}

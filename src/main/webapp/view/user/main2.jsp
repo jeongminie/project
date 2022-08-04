@@ -13,8 +13,9 @@
 	
 	<!-- 제이쿼리 -->
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="../include/js/header.js"></script>
 	
-	<link rel="stylesheet" href="/resources/static/css/style.css">
+	<link rel="stylesheet" href="/resources/static/css/main.css">
 	
   	<!-- fontawesome -->
 	<script src="https://kit.fontawesome.com/9a0994e5cb.js" crossorigin="anonymous"></script>
@@ -25,232 +26,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
 	
 	<title>메인</title>
-	
-	<style>
-		body {
-			background-image: url('/resources/static/image/micro_carbon.png');
-			color : white;
-		}
-		
-		.front-area {
-			margin: auto;
-			margin-top: 15px;
-			width : 60%;
-		}
-		
-		.logo {
-			width : 170px;
-			height : 90px;
-			position: absolute;
-			top : 0%;
-			right : 46%;
-		}
-		
-		.user {
-			position: absolute;
-			top : 6.5%;
-			right : 20%;
-		}
-		
-		a {
-			text-decoration-line: none;	
-			color : white !important;
-		}
-		
-		a:hover {
-			color : white;
-		}
-		
-		ul {
-			list-style : none;
-			/* overflow : auto; */
-			padding-left : 0px;
-			padding-right : 0px;
-		}
-		
-		.cont-area {
-			margin: auto;
-			margin-top : 50px;
-			width : 60%;
-			height : 600px;
-			text-align: center;
-		}
-		
-		.rank-list {
-			display: flex;
-			justify-content: space-around;
-		}
-		
-		/* .rank-box {
-			width : 250px;
-			height : 400px;
-			position: relative;
-		} */
-		
-		.rank-item {
-			width : 250px;
-			height : 400px;
-			position: relative;
-		}
-		
-		.poster {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			border-radius : 5px;
-		}
-		
-		.wrap {
-			display : none;
-			width: 100%;
-			height: 100%;
-			opacity: 0.5;
-			background-color : black;
-			border-radius : 5px;
-			position :absolute;
-			top : 0%;
-		}
-		
-		.summary {
-			display: flex;
-			margin: 15px;
-			border-bottom: 1px solid #EBEBEB;
-		}
-		
-		.booking-btn {
-			background-color: #037B94;
-			color : white;
-			border : 0px;
-		}
-		
-		.booking-btn:hover {
-			background-color: #037B94;
-			color : white;
-			border : 0px;
-		}
-				
-		.search-link {
-			overflow:hidden; 
-			display:block; 
-			height:75px;
-			margin:100px 0 0 0; 
-			padding:23px 0 0 0; 
-			background-color:rgba(0,0,0,0.2);
-		}
-		
-		.search-link .cell {
-			position:relative; 
-			float:left; 
-			width:25%; 
-			text-align:center; 
-			border-left:1px solid #423e3e;
-		}
-		
-		.search-link .cell:first-child {
-			border-left:0;
-		}
-		
-		.search-link .search {
-			position:relative; 
-			display:inline-block; 
-			width:200px; 
-			height:30px; 
-			padding:0 30px 0 0; 
-			border-bottom:1px solid #423e3e;
-		}
-		
-		.search-link .search .input-text {
-			display:block; 
-			width:100%; 
-			height:100%; 
-			border:0; 
-			background-color:transparent; 
-			color:#fff;
-		}
-		
-		.search-link .search .input-text::placeholder {
-			color:#aaa; 
-			opacity: 1;
-		}
-		
-		.search-link .search .input-text:-ms-input-placeholder {
-			color:#aaa;
-		}
-		
-		.search-link .search .input-text::-ms-input-placeholder {
-			color:#aaa;
-		}
-		
-		.search-link .search .btn {
-			display:block; 
-			position:absolute; 
-			right:0; 
-			top:0; 
-			width:30px; 
-			height:100%; 
-			font-size:0; 
-			line-height:0; 
-			margin:0; 
-			padding:0; 
-			border:0; 
-			background-color:transparent;
-		}
-		
-		.search-link a {
-			display:inline-block; 
-			margin:0; 
-			padding:0; 
-			line-height:30px; 
-			color:#fff;
-		}
-		
-		.search-link a .iconset {
-			margin-top:-2px; 
-			margin-right:5px;
-		}
-
-	</style>
 </head>
 <body>
-	<div>
-		<header>
-			<div class="front-area">
-				<div class="center-link">
-					<a href="javascript:location.reload()"><img src="/resources/static/image/logo.png" class="logo"></a>
-				</div>
-				<div class="right-link d-flex justify-content-end">
-					<a href="#" class="mr-3 login" data-bs-toggle="modal" data-bs-target="#loginModal">로그인</a>
-					<a href="#" class="signup">회원가입</a>
-				</div>
-				<nav class="menu mt-3">
-					<ul class="nav nav-pills nav-fill">
-						<li class="nav-item nav-title dropdown">
-							<a class="nav-link nav-title-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" disabled>영화</a>
-							<ul class="nav-sub dropdown-menu">
-								<li><a class="nav-link" href="#">상영중인 영화</a></li>
-								<li><a class="nav-link" href="#">상영예정 영화</a></li>
-							</ul>
-						</li>
-						<li class="nav-item nav-title dropdown">
-							<a class="nav-link nav-title-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">극장</a>
-						</li>
-						<li class="nav-item nav-title dropdown">
-							<a class="nav-link nav-title-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" disabled>예매</a>
-							<ul class="nav-sub dropdown-menu">
-								<li><a class="nav-link" href="#">CGV</a></li>
-								<li><a class="nav-link" href="#">메가박스</a></li>
-							</ul>
-						</li>
-						<li class="nav-item nav-title dropdown">
-							<a class="nav-link nav-title-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">예매내역</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="user">
-					<a href="#"><i class="fa-solid fa-user"></i></a>
-				</div>	
-			</div>
-		</header>
+	<div id="wrap">
+		<jsp:include page="../include/jsp/header_dark.jsp" />
 		<section class="cont-area">
 			<div>
 				<p>박스오피스</p>
@@ -307,18 +86,24 @@
 					</li>
 				</ul>
 			</div>
-			<div class="search-link">
-				<div class="cell">
-					<div class="search">
-						<input type="text" placeholder="영화명을 입력해 주세요" title="영화 검색" class="input-text" id="movieName">
-						<button type="button" class="btn" id="btnSearch"><i class="fa-solid fa-magnifying-glass"></i>검색</button>
+			<div class="search-area">
+				<span>예매 정보를 선택 해주세요.</span>
+				<div class="search-link">
+					<div class="cell">
+						<div class="search">
+							<input type="text" placeholder="영화명을 입력해 주세요" title="영화 검색" class="input-text" id="movieName">
+							<button type="button" class="btn" id="btnSearch"><i class="fa-solid fa-magnifying-glass"></i>검색</button>
+						</div>
 					</div>
+					<div class="cell"><a href="#" title="상영시간표 보기"><i class="fa-solid fa-calendar-days mr-2"></i>상영시간표</a></div>
+					<div class="cell"><a href="#" title="박스오피스 보기"><i class="fa-solid fa-film mr-2"></i>박스오피스</a></div>
+					<div class="cell"><a href="#" title="빠른예매 보기"><i class="fa-solid fa-ticket-simple mr-2"></i>예매</a></div>
 				</div>
-				<div class="cell"><a href="#" title="상영시간표 보기"><i class="fa-solid fa-calendar-days mr-2"></i>상영시간표</a></div>
-				<div class="cell"><a href="#" title="박스오피스 보기"><i class="fa-solid fa-film mr-2"></i>박스오피스</a></div>
-				<div class="cell"><a href="#" title="빠른예매 보기"><i class="fa-solid fa-ticket-simple mr-2"></i>예매</a></div>
 			</div>
 		</section>
+		<footer>
+			<jsp:include page="../include/jsp/footer.jsp" />
+		</footer>
 	</div>
 	
 	<!-- modal -->
@@ -340,7 +125,6 @@
 							<a href="#" class="text-dark">회원가입</a>
 						</p>
 					</div>
-					
 				</div>
 				<div class="modal-footer">
 					<!-- <button type="button" class="btn" data-bs-dismiss="modal">취소</button>
@@ -351,44 +135,18 @@
 	</div>
 	
 	<script>
- 		$(document).ready(function(){
- 			$(".signup").on("click", function(){
- 				location.href="sign/signupForm.jsp";
- 			});
- 			
- 			$(".nav-sub").hide();
- 			
-			/* $(".nav-title").on("mouseover", function(){
-				$(this).children(".nav-sub").stop().slideDown(200);
-			}); */
-			
-			/* $(".nav-title-item").on("mouseover", function(){
-				$(".nav-title").children(".nav-sub").stop().slideDown(200);
-			}); */
-			
-			$(".nav-title-item").on("mouseover", function(){
-				$(this).parent(".nav-title").children(".nav-sub").stop().slideDown(200);
-			});
-			
-			$(".nav-title").on("mouseleave", function(){
-				$(this).children(".nav-sub").stop().slideUp(200);
-			});
-			
-			
+		$(document).ready(function(){
 			$(".rank-item").on("mouseover", function(e){
 				if ($(e.target).is('.poster')) {
-					$(".wrap").fadeIn();
+					$(this).children(".wrap").fadeIn();
 			    }
-				
 			}); 
 			
 			$(".rank-item").on("mouseleave", function(){
 				$(".wrap").fadeOut();
 			});
-			
 		});
 	</script>
-
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
