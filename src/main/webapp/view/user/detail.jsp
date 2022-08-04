@@ -61,14 +61,22 @@
     	text-align: center;
     	padding: 8px;
     }
-    
- 
 	</style>
 		
 </head>
 <body>
 	<div id="wrap">
 	<jsp:include page="../include/jsp/header_white.jsp" />
+	<div class="page-util">
+		<div class="inner-wrap">
+			<div class="location">
+				<span>Home</span>
+				<a href="#" title="예매 페이지로 이동">메가박스</a>
+				<a href="#" title="상영시간표 페이지로 이동">상영시간표</a>
+			</div>
+			
+		</div>
+	</div>
 		<section>
 			<div id="filter-area">
 				<div class="movie-item">
@@ -77,6 +85,26 @@
 				
 				<div class="movie-item">
 					<div class="div-title">극장</div>
+					<div class="list-area" id="brchTab">
+						<div class="all-list">
+						    <button type="button" class="btn-tab on">전체</button>
+						    <div class="list" style="display: block;">
+						        <div class="scroll" id="brchList">
+						            <ul><li></li></ul>
+						        </div>
+						    </div>
+						</div>
+						<div class="other-list">
+						    <button type="button" class="btn-tab">특별관</button>
+						    <!-- list -->
+						<div class="list" id="specialBrchTab" style="display: none;">
+						    <div class="scroll" id="specialBrchList">
+						        <ul><li></li></ul>
+						    </div>
+						</div>
+						<!--// list -->
+						</div>
+					</div>
 				</div>
 				
 				<div class="movie-item-end">

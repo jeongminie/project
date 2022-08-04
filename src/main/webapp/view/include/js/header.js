@@ -5,20 +5,17 @@ $(document).ready(function(){
 	
 	$(".nav-sub").hide();
 	
-	/* $(".nav-title").on("mouseover", function(){
-		$(this).children(".nav-sub").stop().slideDown(200);
-	}); */
-	
-	/* $(".nav-title-item").on("mouseover", function(){
-		$(".nav-title").children(".nav-sub").stop().slideDown(200);
-	}); */
-	
 	$(".nav-title-item, .nav-sub").on("mouseover", function(){
-		$(this).parent(".nav-title").children(".nav-sub").stop().slideDown(200);
+		$(this).parent(".nav-title").children(".nav-sub").stop().show();
+		$(".page-util").css("backgroundColor", "#CA0181");
+		$(".location").css("display", "none");
+
 	});
 	
 	$(".nav-title").on("mouseleave", function(){
-  		$(this).children(".nav-sub").stop().slideUp(200);
+  		$(this).children(".nav-sub").stop().hide();
+  		$(".page-util").css("backgroundColor", "#f8f8fa");
+  		$(".location").css("display", "block");
 	});
 
 });
