@@ -7,7 +7,7 @@ $(document).ready(function(){
 	
 	$(".nav-title-item, .nav-sub").on("mouseover", function(){
 		$(this).parent(".nav-title").children(".nav-sub").stop().show();
-		$(".page-util").css("backgroundColor", "#CA0181");
+		$(".page-util").css("backgroundColor", "#BEB4AF");
 		$(".location").css("display", "none");
 
 	});
@@ -16,6 +16,10 @@ $(document).ready(function(){
   		$(this).children(".nav-sub").stop().hide();
   		$(".page-util").css("backgroundColor", "#f8f8fa");
   		$(".location").css("display", "block");
+	});
+	
+	$(".logo").on("click", function(){
+		location.reload();	
 	});
 
 });

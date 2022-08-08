@@ -19,11 +19,11 @@ header {
 }
 
 .logo {
-	width : 170px;
-	height : 90px;
-	position: absolute;
-	top : 0%;
-	right : 46%;
+    width: 50px;
+    height: 55px;
+    position: absolute;
+    top : 20%;
+    right: 50%;
 }
 
 .user {
@@ -367,7 +367,7 @@ ul {
 
 .modal-header {
 	height : 25px;
-	background-color: #CA0181;
+	background-color: #BEB4AF;
 	border-radius: 0px;
 	color : white;
 	align-items : center;
@@ -378,13 +378,13 @@ ul {
 	border : 1px solid #DADADA;
 	width : 200px;
 	color : white;
-	background-color : #CA0181;
+	background-color : #BEB4AF;
 	border : 0px;
 }
   		
 .login-btn:hover {
 	color : white;
-	background-color : #CA0181;
+	background-color : #BEB4AF;
 	border : 0px;
 }
 

@@ -57,7 +57,7 @@
     
     .div-title {
     	height : 40px;
-    	background-color: #CA0181;
+    	background-color: #BEB4AF;
     	text-align: center;
     	padding: 8px;
     }

@@ -51,16 +51,16 @@
   		}
   		
   		.signup-btn {
-  			border : 1px solid #DADADA;
+  			border : 1px solid #BEB4AF;
   			width : 200px;
   			color : white;
-  			background-color : #CA0181;
+  			background-color : #BEB4AF;
   			border : 0px;
   		}
   		
   		.signup-btn:hover {
 			color : white;
-  			background-color : #CA0181;
+  			background-color : #BEB4AF;
   			border : 0px;
   		}
 	  			
